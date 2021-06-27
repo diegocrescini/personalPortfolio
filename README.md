@@ -8,7 +8,13 @@ See how far I can get with 100 hours of code, not counting actual studying and l
 
 # portfolio-log
 
-Jun 27 2021 - 1 hour.
+Jun 27 2021 - 1.5 hours.
 Moved some files around to prepare for this. 
-Added website-haken-band dir (first "real" website project) and website-diegocrescini 
-(really raw first personal portfolio draft from my work in freeCodeCamp)  into this repo. 
+Added website-haken-band dir (first "real" website project). 
+Added website-diegocrescini dir (raw personal portfolio draft from freeCodeCamp) into this repo. 
+Checked portfolio files, did minor adjustments and added some placeholders for future projects.
+
+
+# total work time count: 
+
+Jun 27 2021 : 1.5 hours.

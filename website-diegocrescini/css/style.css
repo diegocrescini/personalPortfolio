@@ -77,9 +77,11 @@ header h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .navbar ul li, .navbar ul li a {
-    height: 2rem;
+    height: 100%;
+    
 }
 
 /********************Welcome********************/
@@ -137,6 +139,9 @@ header h3 {
     
 }
 .project-tile p {
+    background-color: green;    /* remove this line after placing actual projects */
+    width: 100%;                  /* remove this line after placing actual projects */
+    height: 240px;                /* remove this line after placing actual projects */
     margin: .5rem 0rem 1rem;
     text-align: center;
 }
