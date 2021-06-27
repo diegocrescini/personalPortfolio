@@ -1,0 +1,47 @@
+<span class="day">Thu, JUN 25, 2020 / Auditorio Miguel Ríos / Madrid, Spain
+
+<span class="day">Wed, JUN 3, 2020 / Sweden Rock Festival 2020 / Norje, Sweden
+
+<span class="day">Tue, MAR 24, 2020 / Mayan Theatre / Los Angeles, CA
+
+<span class="day">Mon, MAR 23, 2020 / The Van Buren / Phoenix, AZ
+
+<span class="day">Sat, MAR 21, 2020 / The Oriental Theater / Denver, CO
+
+<span class="day">Fri, MAR 20, 2020 / The Granada / Lawrence, KS
+
+<span class="day">Thu, MAR 19, 2020 / First Avenue / Minneapolis, MN
+
+<span class="day">Wed, MAR 18, 2020 / RED FLAG - MJP / St. Louis, MO
+
+<span class="day">Sun, MAR 15, 2020 / House of Blues Cleveland / Cleveland, OH
+
+
+
+
+
+<span class="day">Sat, MAR 14, 2020 / Metro / Chicago, IL
+
+<span class="day">Fri, MAR 13, 2020 / The Crofoot Ballroom / Pontiac, MI
+
+<span class="day">Thu, MAR 12, 2020 / Cannery Ballroom / Nashville, TN
+
+<span class="day">Tue, MAR 10, 2020 / Granada Theater / Dallas, TX
+
+<span class="day">Mon, MAR 9, 2020 / The Studio at Warehouse Live / Houston, TX
+
+<span class="day">Sun, MAR 8, 2020 / Southport Hall / Jefferson, LA
+
+<span class="day">Sat, MAR 7, 2020 / The Plaza Live / Orlando, FL
+
+<span class="day">Fri, MAR 6, 2020 / Center Stage Theater / Atlanta, GA
+
+<span class="day">Wed, MAR 4, 2020 / Canal Club / Richmond, VA
+
+<span class="day">Tue, MAR 3, 2020 / Theatre of Living Arts / Philadelphia, PA
+
+<span class="day">Sun, MAR 1, 2020 / Paradise Rock Club / Boston, MA
+
+<span class="day">Sat, FEB 29, 2020 / Warsaw / Brooklyn, NY
+
+<span class="day">Fri, FEB 28, 2020 / Théâtre Corona / Montréal, Canada
