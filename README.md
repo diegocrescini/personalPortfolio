@@ -14,14 +14,19 @@ Added website-haken-band dir (first "real" website project).
 Added website-diegocrescini dir (raw personal portfolio draft from freeCodeCamp) into this repo. 
 Checked portfolio files, did minor adjustments and added some placeholders for future projects.
 
-Jun 29 2021 - 
+Jun 29 2021 - 0.5 hours.
 Fixed some header and nav layout. 
 Added media queries for nav and main. 
 Reset projects preview layout to start with flexbox.
+
+Jun 30 - 1 hour.
+Went for a minimalistic header, only git and contact. Played around with color. 
+Fixed some HTML accordingly. 
 
 
 
 Jun 27 2021: 1.5 hours.
 Jun 29 2021: 0.5 hours.
+Jun 30 2021: 1 hour.
 
-# total work time count: 2 hours. 
+# total work time count: 3 hours. 
