@@ -1,10 +1,11 @@
 :root {
-    --black: #000;
-    --lightGrey: #888;
-    --darkGrey: #333;
-    --white: #fff;
-    --cyan: #0ff;
-    --slab: 'Zilla Slab Highlight', cursive;
+    --black: #333;
+    --medium: #888;
+    --white: #eee;
+    --green: rgb(76, 199, 189);
+    --besley: 'Besley', serif; /*Serif. 400, 400 italic, 700*/
+    --montserrat: 'Montserrat', sans-serif; /*Sans serif. 300, 400, 600*/
+
 }
 /********************Config********************/
 html {
@@ -19,28 +20,27 @@ html {
 /********************General********************/
 
 body {
-    background-color: #000;
+    background-color: var(--black);
 }
 .container {
     display: block;
     margin: 0 auto;
     width: 90%;
-    border: solid 1px  #000; /* Visualization border*/
+    /*Visualization border*/
+    /* border: solid 1px  red;  */
 }
-
-@media (min-width: 768px) {
-    .container {
-      display: block;
-      width: 75%;
-    }
-  }
 @media (min-width: 1200px) {
     .container {
-      display: block;
-      width: 55%;
+    width: 50%;
     }
   }
+@media (min-width: 768px) {
+    .container {
+    width: 75%;
+    }
+}
 a {
+    padding: .6rem;
     text-decoration: none;
     list-style-type: none;
     color: unset; /*THIS NEEDS MODIFICATION AFTER CHOSING PALETTE*/
@@ -48,14 +48,35 @@ a {
 
 /********************Type and text********************/
 
-h1, h2, h3, .uppercase {
+/*LOGO PLACEHOLDER*/
+/*NAV*/
+nav a, h1 a {
+    font-family: var(--montserrat);
+}
+
+h1 a {
+    font-weight: 600;
+    font-size: 2.5rem;
+} 
+#logo {
+    padding: .5rem;
+}
+
+
+/*Various*/
+h1, h3, .uppercase {
     text-transform: uppercase;
 }
-h1, h2, h3, p, a {
-    font-family: Helvetica, Arial, sans-serif;
-    color: #f3f0e1;
+h2, h3 {
+    color: var(--green);
+    font-family: var(--montserrat);
+    font-weight: 600;
 }
-h1, h2, h3 {
+
+p, a {
+    color: var(--white);
+}
+h2, h3 {
     margin: .5rem 0;
 }
 
@@ -66,102 +87,85 @@ header {
     width: 100%;
     margin-top: 0;
     position: fixed;
-    background-color:#000;
-    border-bottom: 1px solid #f3f0e1;
-}
-header h1, header a {
-    
+    border-bottom: 2px solid var(--green);
+    /*visualization border*/
+    /* outline: 1px solid green; */
 }
 
 header nav {
-    height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav .contact {
-    height: 100%;
-    display: flex;
     flex-direction: column;
+}
+nav h1 {
+    height: 4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0;
+    padding-top: .2rem;
+}
+nav .menu {
+    height: 2rem;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
     justify-content: space-around;
     list-style-type: none;
 }
 
-header h1 {
-    font-size: 1.6rem;
-    text-align: center;
-    
+.menu li a {
+    font-weight: 600;
 }
-header .contact {
+.menu li a:hover {
+    border-bottom: 3px solid var(--green);
+    background-color: var(--green);
     
-}
+} 
 
-.navbar {
-    /* height: 2rem; */
-    display: flex;
-    flex-direction: column;
-}
 
-.navbar ul{
-    height: 100%;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;   
-    
-}
-.navbar ul li {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.navbar ul li, .navbar ul li a {
-    
+
+
+/********************Welcome********************/
+main{
     
 }
 
 /********************Welcome********************/
 
+
 #welcome-section {
-    height: 100vh;
+    height: calc(100vh - 1rem);
     width: 95%;
+    padding-top: 6rem; /*same as header height*/
     display: flex;
     flex-direction: column;
     
 }
-.welcome-to-my-portfolio {
-    flex-grow: 6;
-    padding: 8rem 2rem;
+.welcome-section__greeting {
+    flex-grow: 10;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
-.welcome-to-my-portfolio .box {
-    height: 10rem;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-around;
-}
-
-.welcome-to-my-portfolio h2{
+.welcome-section__greeting h2{
     font-size: 3rem;
     align-self: stretch;
+    text-align: center;
+}
+
+
+.welcome-section__about-me {
+    flex-grow: 2;
+    margin: 0rem 1rem;
+    text-align: center;
     
 }
-
-
-.about-projects {
-    flex-grow: 2;
-    padding: 2rem;
-    text-align: right;
+.welcome-section__about-me p {
+    padding-bottom: .5rem;
 }
-
 
 /********************PROJECTS********************/
 #projects {

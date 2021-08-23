@@ -23,10 +23,14 @@ Jun 30 - 1 hour.
 Went for a minimalistic header, only git and contact. Played around with color. 
 Fixed some HTML accordingly. 
 
+Aug 23 - 2.5 hours. 
+Added CSS and did some refactoring to welcome scetion.
+Added style and color to the landing page.
 
 
 Jun 27 2021: 1.5 hours.
 Jun 29 2021: 0.5 hours.
 Jun 30 2021: 1 hour.
+Aug 23 2021: 2.5hours.
 
-# total work time count: 3 hours. 
+# total work time count: 5.5 hours. 
