@@ -2,7 +2,8 @@
     --black: #222;
     --medium: #888;
     --white: #eee;
-    --green: rgb(76, 199, 189);
+    /* --green: rgb(76, 199, 189); */
+    --green: #02a4d3;
     --besley: 'Besley', serif; /*Serif. 400, 400 italic, 700*/
     --montserrat: 'Montserrat', sans-serif; /*Sans serif. 300, 400, 600*/
 
@@ -40,7 +41,6 @@ body {
     }
 }
 a {
-    padding: 1rem;
     text-decoration: none;
     list-style-type: none;
     color: unset; /*THIS NEEDS MODIFICATION AFTER CHOSING PALETTE*/
@@ -78,6 +78,7 @@ h2, h3 {
     margin: .5rem 0;
 }
 
+/*****************************************************/
 /********************Header & nav********************/
 
 header {
@@ -87,8 +88,7 @@ header {
     position: fixed;
     background-color: var(--black);
     border-bottom: 2px solid var(--green);
-    /*visualization border*/
-    /* outline: 1px solid green; */
+    z-index: 50;
 }
 
 header nav {
@@ -97,6 +97,7 @@ header nav {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
 }
 nav h1 {
     height: 4rem;
@@ -113,51 +114,46 @@ nav .menu {
     justify-content: space-around;
     align-items: flex-end;
     list-style-type: none;
+    /*visualization border*/
+    /* outline: 1px solid green; */
 }
 
 .menu li a {
     font-weight: 600;
+    padding: 1rem;
 }
 .menu li a:hover {
-    background-color: var(--green);
-    
+    background-color: var(--green);    
 } 
 
-
-
-
-/********************Welcome********************/
-#welcome-section {
+/*******************************************************/
+/********************Welcome section/Projects section********************/
+#welcome-section, #projects {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 1rem);
+    padding-top: 14rem; /*same as header height (8rem) + image padding-top (6rem)*/
 }
+/********************Image DIV********************/
 .welcome-section__img{
+    display: flex;
+    flex-grow: 1;
     margin: 0 auto;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .welcome-section__img img{
-    
     border-radius: 50%;
     height: 75%;
+    filter: grayscale(100%);
 }
 
-/********************Welcome********************/
-
-
-#welcome-section {
-    height: calc(100vh - 1rem);
-    width: 95%;
-    padding-top: 8rem; /*same as header height*/
-    display: flex;
-    flex-direction: column;
-    
-}
+/********************Greeting DIV********************/
 .welcome-section__greeting {
-    flex-grow: 10;
-    padding: 2rem 0;
+    flex-grow: 1;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    
 }
 
 .welcome-section__greeting h2{
@@ -166,9 +162,9 @@ nav .menu {
     text-align: center;
 }
 
-
+/********************About Me DIV********************/
 .welcome-section__about-me {
-    flex-grow: 2;
+    flex-grow: 1;
     margin: 0rem 1rem;
     text-align: center;
     
@@ -181,27 +177,34 @@ nav .menu {
 #projects {
     padding: 2rem;
 }
-#projects h2 {
+#projects h2, #projects h3, #projects h4, #projects p {
     text-align: center;
+    margin: .5rem;
 }
 .projects-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     
 }
 
 .project-tile {
-    display: inline;
+    max-width: 100%;
+    margin: 1rem auto 2rem auto;
+}
+
+.project-tile a img {
     border: 1px solid #000;
-    /* width: 40%;
-    height: 40%; */
-    margin: 0 auto;
+    max-width: 100%;
 }
  
-/* @media (min-width: 768px) {
+@media (min-width: 1200px) {
+    .projects-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
     .project-tile {
         max-width: 40%;
     }   
 } 
- */
+
