@@ -1,0 +1,121 @@
+:root {
+    --black: #000;
+    --lightGrey: #888;
+    --darkGrey: #333;
+    --white: #fff;
+    --cyan: #0ff;
+    --slab: 'Zilla Slab Highlight', cursive;
+}
+/********************Config********************/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/********************General********************/
+
+
+
+/********************Type and text********************/
+h1, li, a, h2, h3, p {
+    color: var(--black);
+}
+h1, h2, h3, h3 a, h3 code {
+    color: var(--darkGrey);
+    font-family: var(--slab);
+    margin: 1.2rem 0;
+}
+li, p, code {
+    font-family: Helvetica, Arial, sans-serif;
+}
+p code {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+li {
+    list-style-type: none;
+    margin: .5rem 0;
+}
+li a:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+p {
+    line-height: 1.2rem;
+    margin: .5rem 0;
+}
+h1 {
+    font-size: 3.3rem;
+}
+h2 {
+    font-size: 2.3rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+.main-section li {
+    margin-top: 2rem;
+}
+
+/********************Layout********************/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    height: 281px;
+    position: fixed;
+    border-bottom: .1rem solid var(--darkGrey);
+    background-color: var(--white);
+    width: 100%;
+    z-index: 10;
+}
+#navbar header, #navbar ul {
+    width: 90%;
+    margin: 0 auto;
+}
+#main-doc {
+    position: relative;
+    top: 281px;
+    width: 90%;
+    margin: 0 auto;
+}
+.main-section {
+    border-bottom: .1rem solid var(--darkGrey)
+}
+
+@media (min-width: 1200px) {
+    body {
+        flex-direction: row;
+        margin: 2rem 6rem;
+        width: 80%;
+    }
+    #navbar {
+        padding: 0 3rem; 
+        position: fixed;
+        width: 20rem;
+        height: 100%;
+        border-bottom: unset;
+        border-right: .1rem solid var(--darkGrey);
+    }
+    #main-doc {
+        position: relative;
+        left: 20%;
+        top: 0;
+        margin: 0 15rem;
+    }   
+    #navbar li {
+        margin-bottom: 2rem;
+    }
+}
+
