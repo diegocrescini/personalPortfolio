@@ -85,9 +85,12 @@ li {
 .header {
     display: flex;
     flex-direction: column-reverse;
+    
     }
 @media (min-width: 1280px) {
     .header {
+        width: 70%;
+        margin: 0 auto;
         display: grid;
         padding: 3rem 0;
         grid-template-columns: repeat(3, 1fr);

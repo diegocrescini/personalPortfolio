@@ -132,7 +132,7 @@ nav .menu {
     display: flex;
     flex-direction: column;
     height: calc(100vh - 1rem);
-    padding-top: 14rem; /*same as header height (8rem) + image padding-top (6rem)*/
+    padding-top: 11rem; /*same as header height (8rem) + image padding-top (3rem)*/
 }
 /********************Image DIV********************/
 .welcome-section__img{
